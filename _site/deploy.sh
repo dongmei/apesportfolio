@@ -1,5 +1,4 @@
 #/bin/sh
-
 git checkout -b gh-pages
 jekyll build
 git add _site -f
