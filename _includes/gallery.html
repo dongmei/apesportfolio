@@ -1,0 +1,21 @@
+
+
+<div class="galleryFilter text-center">
+    <a href="#" data-filter="*" class="current">All</a>
+    <!-- <a href="#" data-filter=".website">Website</a> -->
+    <a href="#" data-filter=".sketchbook">Sketchbook</a>
+    <a href="#" data-filter=".illustration">Illustration</a>
+    <a href="#" data-filter=".digital">Digital</a>
+    <a href="#" data-filter=".print">Print</a>
+</div>
+
+<br>
+
+
+<div class="portfolioContainer">
+     {% for work in site.categories['work'] limit:include.limit %}
+               <div class="{{ work.subjects }} col-lg-12 galleryitem centered">
+                   <img src="{{ "/assets/img/work/" | prepend: site.baseurl }}{{work.img}}" alt="image">
+                </div>
+    {% endfor %}
+</div>

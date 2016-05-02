@@ -1,0 +1,41 @@
+---
+layout: portfolio
+title: Portfolio
+permalink: /portfolio/
+subtitle: Projects that I have worked on
+---
+
+
+
+
+<div class="container mtb">
+    <div class="row">
+            <!-- <div class="hline"></div> -->
+
+        <!-- BLOG POSTS LIST -->
+        <!-- PORTFOLIO PROJECTS LIST -->
+        <div class="col-lg-8 col-lg-offset-2 center">
+
+            {% for post in site.categories['project'] %}
+
+            	<div class="row text-center">
+                    <hr>
+	                <!-- //Project Post -->
+	                <a href="{{ post.url | prepend: site.baseurl }}">
+	                    <img class="img-responsive" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ post.img }}">
+	                </a>    
+	                <a href="{{ post.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ post.title }}</h3></a>
+
+	                    <div class="col-lg-8 col-lg-offset-2">
+	                        <br/>
+	                        <a href="{{  project.url | prepend: site.baseurl }}" class="btn btn-danger more-link">Read more</a>
+	                    </div>
+	            </div>
+
+            {% endfor %}
+
+        </div><!-- //col-lg-8 --> 
+
+
+    </div><!-- <! //row --> 
+</div><!-- <! //container --> 

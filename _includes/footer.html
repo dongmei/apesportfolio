@@ -1,0 +1,21 @@
+<div id="footerwrap">
+    <div class="container">
+       <div class="row text-center">
+            <div class="col-lg-4 col-lg-offset-4">
+                <h4>Around the web</h4>
+                <div class="hline-w"></div>
+                <p>
+                    {% for network in site.social %}
+                        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+
+        <br>
+        <div class="col-lg-4 col-lg-offset-4 text-center">
+          <csmall>© 2016 All Rights Reserved.</csmall>
+        </div>
+
+    </div><!-- //container --> 
+</div><!-- //footerwrap -->

@@ -1,0 +1,61 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: Apes Portfolio | Jekyll Theme 
+description: "This is a Jekyll powered theme template"
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "/apesportfolio" #important: start with /
+url: "http://dongmei.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#FF3636" #"#F70031" 
+  primary_rgb: "255,54,54" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#424242" 
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+  grey_color: "#B4B4B4"
+  grey_color_light: lighten($grey_color, 40%);
+  grey_color_dark:  darken($grey_color, 25%);
+  
+  
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: dribbble
+    url: https://dribbble.com/
+  - title: github
+    url: https://github.com
+  - title: twitter
+    url: https://twitter.com
+  - title: instagram
+    url: https://www.instagram.com
+  - title: linkedin
+    url: https://sg.linkedin.com
+    
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines: 
+    - Address line 1
+    - Address line 2
+email: youremailhere@gmail.com
+tel: (+00) 12345678
+
+
+# ### GENERAL DATA FOR VARIOUS LOCATIONS ###
+    
+# # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+# about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+# # Testimonial content. Shown on Home and About page. 
+# testimonial:
+#     message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+#     author: Marcel Newman
+#     position: WEB DESIGNER - BLACKTIE.CO
